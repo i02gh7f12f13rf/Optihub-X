@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Home | Eminence</title>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="eminence.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <img class="main-child" alt="" src="./public/rectangle-1@2x.png" />
+
+      <div class="user-select-panel">
+        <div class="home-parent">
+          <div class="home" onclick="window.location.href='index.html';">Home</div>
+          <div class="home" onclick="window.location.href='about.html';">About</div>
+          <div class="home" onclick="window.location.href='store.html';">Store</div>
+          <div class="home" onclick="window.location.href='support.html';">Support</div>
+        </div>
+      </div>
+      <div class="main-item"></div>
+      <div class="user-action-panel">
+        <div class="home register" id="registerButton">Register</div>
+        <div class="home register" id="loginButton">Login</div>
+        <div class="home register hidden" id="logoutButton">Log out</div>
+        <img src="DashImg.png" class="logout-image" onclick="redirectToLogin()" alt="Logout Image">
+      </div>
+      <b class="eminence" onclick="window.location.href='index.html';">Eminence</b>
+
+      <div class="enjoy-counter-strike-2">
+        Enjoy Counter-Strike 2 like never before with the help of eminence's
+        premium software.
+      </div>
+      <div class="sharp-buttonfalse">
+        <div class="button" onclick="openLoginForm()">
+          <b class="try-it-for">get eminence</b>
+        </div>
+      </div>  
+      <div class="capture1-1-parent">
+        <img class="capture1-1-icon" alt="" src="./public/capture1-1@2x.png" />
+        <img class="icon" alt="" src="./public/2-1@2x.png" />
+        <img class="icon1" alt="" src="./public/3-1@2x.png" />
+      </div>
+    </div>
+          <!-- Login Modal -->
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <div class="login-form">
+            <b class="modal-eminence">Eminence</b>
+            <form>
+              <input type="text" id="username" name="username" placeholder="Email" required autocomplete="off" maxlength="25">
+              <input type="password" id="password" name="password" placeholder="Password" required autocomplete="off" maxlength="25">
+              <button type="submit">Login</button>
+              <!--<div class="register-text" onclick="window.location.href='register.html';">
+                Don't have an account ? Register now  -->
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div id="registerModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeRegisterModal">&times;</span>
+          <div class="modal-content">
+            <b class="modal-eminence">Register</b>
+            <form id="registrationForm">
+              <input type="email" id="registerEmail" name="registerEmail" placeholder="Email" required autocomplete="off" maxlength="25">
+              <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" required autocomplete="off" maxlength="25">
+              <button type="submit">Register</button>
+              <!--<div class="register-text" onclick="openLoginForm();">Already have an account? Sign in</div> -->
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyA2gPPpPaTUeAfVXZlbS_XkEwWHsJCi-VE",
+          authDomain: "eminence-ba6e8.firebaseapp.com",
+          projectId: "eminence-ba6e8",
+          storageBucket: "eminence-ba6e8.appspot.com",
+          databaseURL: "https://eminence-ba6e8-default-rtdb.europe-west1.firebasedatabase.app/",
+          messagingSenderId: "152196425335",
+          appId: "1:152196425335:web:192dc07ef50d15fe920872"
+        };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+  
+      // Initialize Firebase Authentication
+      var auth = firebase.auth();
+      </script>
+      <script src="./index.js"></script>
+
+      <script>
+        // Check the authentication state
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            // User is signed in, show the register and login buttons
+            document.querySelectorAll('.register').forEach(function(button) {
+              button.classList.remove('hidden');
+            });
+          } else {
+            // User is signed out, hide the register and login buttons
+            document.querySelectorAll('.register').forEach(function(button) {
+              button.classList.add('hidden');
+            });
+          }
+        });
+      </script>
+
+
+  <script>
+  // Keep the user logged in across page reloads
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+    .then(function() {
+      // Authentication state change listener
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          // User is signed in, show the register and login buttons
+          document.getElementById('registerButton').classList.add('hidden');
+          document.getElementById('loginButton').classList.add('hidden');
+        } else {
+          // User is signed out, hide the register and login buttons
+          document.getElementById('registerButton').classList.remove('hidden');
+          document.getElementById('loginButton').classList.remove('hidden');
+        }
+      });
+    })
+    .catch(function(error) {
+      console.error('Error setting persistence: ', error);
+    });
+    </script>
+  </body>
+</html>

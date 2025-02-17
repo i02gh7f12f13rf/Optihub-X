@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+
+  /* font sizes */
+  --font-size-21xl: 40px;
+  --font-size-9xl: 28px;
+  --font-size-11xl: 30px;
+  --font-size-13xl: 32px;
+  --font-size-5xl: 24px;
+  --font-size-1x1: 18px;
+  --font-size-2x2: 21px;
+  --font-size-8x8: 30px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-red: #ff0000;
+  --color-black: #000000;
+  --color-cornflowerblue: #84b1ff;
+
+  /* Gaps */
+  --gap-21xl: 40px;
+}

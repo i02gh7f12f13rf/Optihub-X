@@ -1,0 +1,319 @@
+.main-child {
+  position: absolute;
+  top: calc(50% - 632.5px);
+  left: calc(50% - 865.5px);
+  width: 1731px;
+  height: 1265px;
+  object-fit: cover;
+}
+.home {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.home:hover{
+  cursor: pointer;
+  color: #1959a9;
+}
+.home.login, .home.register{
+ color:#1959a9;
+  margin-top: -6px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position:relative;
+}
+.home.register:hover, .home.login:hover {
+  color: var(--color-cornflowerblue);
+}   
+.home.register::after,
+.home.login::after {
+  content: ''; /* Add the pseudo-element */
+  position: absolute; /* Position it relative to the button */
+  bottom: -5px; /* Adjust the distance from the button */
+  left: 0;
+  width: 0; /* Initial width of the line */
+  height: 1.5px; /* Static height of the line */
+  background-color: white; /* Color of the line */
+  transition: width 0.5s ease; /* Add transition effect for width */
+}
+.home.register:hover::after,
+.home.login:hover::after {
+  width: 100%; /* Adjust the width of the line */
+}
+.home::after {
+  content: ''; /* Add the pseudo-element */
+  position: absolute; /* Position it relative to the button */
+  bottom: -5px; /* Adjust the distance from the button */
+  left: 0;
+  width: 0; /* Initial width of the line */
+  height: 1.5px; /* Static height of the line */
+  background-color: white; /* Color of the line */
+  transition: width 0.5s ease; /* Add transition effect for width */
+}
+.home:hover::after {
+  width: 100%; /* Adjust the width of the line */
+}
+.home-parent,
+.user-select-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.user-select-panel {
+  position: absolute;
+  top: calc(50% - 562.5px);
+  left: calc(50% - 243.5px);
+}
+.main-item {
+  position: absolute;
+  top: 148.3px;
+  left: calc(50% - 885px);
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 3376px;
+  height: 1px;
+}
+.user-action-panel {
+  position: absolute;
+  top: 70px;
+  left: 1411px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.eminence {
+  position: absolute;
+  top: 55px;
+  left: 66px;
+  font-size: var(--font-size-21xl);
+  color: var(--color-cornflowerblue);
+}
+.eminence:hover{
+  cursor:pointer;
+}
+.enjoy-counter-strike-2 {
+  position: absolute;
+  top: 400px;
+  left: calc(50% - 620.5px);
+  font-weight: 500;
+}
+.try-it-for {
+  position: relative;
+  letter-spacing: 0.16em;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+.try-it-for::after {
+  content: ''; /* Add the pseudo-element */
+  position: absolute; /* Position it relative to the button */
+  bottom: -5px; /* Adjust the distance from the button */
+  left: 0;
+  width: 0; /* Initial width of the line */
+  height: 1.5px; /* Static height of the line */
+  background-color: white; /* Color of the line */
+  transition: width 0.5s ease; /* Add transition effect for width */
+}
+.try-it-for:hover::after {
+  width: 100%; /* Adjust the width of the line */
+}
+.button,
+.sharp-buttonfalse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+.button:hover{
+  cursor: pointer;
+  color: var(--color-cornflowerblue);
+}
+.button {
+  width: 583px;
+  background-color: transparent;
+  height: 144px;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 20px 32px;
+  box-sizing: border-box;
+}
+.sharp-buttonfalse {
+  position: absolute;
+  top: 200px;
+  background-color: transparent;
+  left: 551.5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: var(--font-size-21xl);
+  color : #1959a9;
+}
+.capture1-1-icon,
+.icon,
+.icon1 {
+  width: 557px;
+  position: relative;
+  height: 413px;
+  object-fit: cover;
+}
+.icon,
+.icon1 {
+  width: 532px;
+  height: 401px;
+}
+.icon1 {
+  width: 542px;
+  height: 403px;
+}
+.capture1-1-parent {
+  position: absolute;
+  top: 550px;
+  left: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  height: 1253px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-9xl);
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  opacity: 0;
+}
+.modal-content {
+  background-color: #0b0b0b; /* Darker background color */
+  margin: auto; /* Center the modal */
+  top: calc(50% - 100px); /* Move the form down by 20 pixels */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the modal absolutely */
+  position: absolute;
+  padding: 20px;
+  border: 2px solid #111111;
+  width: 300px; /* Specific width 694->490->300*/
+  height: 280px; /* Specific height 490->250->270->280*/
+  color: white; /* White text color */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: center;
+}
+.modal.show {
+  display: block;
+  animation: fadeIn 1.9s ease forwards; /* Adjust the animation duration here */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Login form styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+}
+.modal-eminence {
+  font-size: calc(var(--font-size-21xl) * 0.8); /* Slightly smaller font size */
+  color: var(--color-cornflowerblue);
+  margin-bottom: 20px;
+  font-family: var(--font-montserrat);
+  text-align: center;
+}
+.login-form label {
+  margin: 10px 0 5px;
+  width: 100%;
+  text-align: left;
+}
+.login-form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 0px solid #555;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+}
+.login-form button {
+  padding: 20px 60px;
+  background-color: #1959a9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow to transition */
+  font-family: var(--font-montserrat); /* Apply Montserrat font */
+  margin-left: 15px;
+}
+.login-form button:hover {
+  background-color: #0f3c73;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
+}
+.register-text {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 20px;
+  margin-left: 15px;
+  font-family: var(--font-montserrat); /* Apply Montserrat font */
+}
+.register-text:hover {
+  color: var(--color-cornflowerblue);
+}
+.hidden{
+  display: none;
+}
+#registerModal {
+  display: none; /* Hide the modal content by default */
+}
+
+.logout-image {
+  height: 60px; /* Set the height of the image to match the button */
+  position: relative;
+  top : -22px;
+  left: 5px;
+  cursor:pointer;
+  transition : filter 0.3 ease;
+}
+@keyframes brightnessAnimation {
+  0% { filter: brightness(1); } /* Start with normal brightness */
+  50% { filter: brightness(5); } /* Reduce brightness halfway through */
+  100% { filter: brightness(1); } /* Return to normal brightness */
+}
+.logout-image:hover {
+  animation: brightnessAnimation 1s infinite; /* Apply the animation */
+}

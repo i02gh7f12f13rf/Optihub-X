@@ -1,0 +1,9 @@
+.rectangle-div {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  background-color: #000;
+  border: 2px solid var(--color-cornflowerblue);
+  box-sizing: border-box;
+  height: 92px;
+}

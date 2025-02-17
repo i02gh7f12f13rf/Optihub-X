@@ -1,0 +1,759 @@
+.main-child {
+    position: absolute;
+    top: calc(50% - 632.5px);
+    left: calc(50% - 865.5px);
+    width: 1731px;
+    height: 1265px;
+    object-fit: cover;
+  }
+  .home {
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .home:hover {
+    cursor: pointer;
+    color: #1959a9;
+  }
+  .home.login, .home.register {
+    color: #1959a9;
+    margin-top: -6px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  .home.register:hover, .home.login:hover {
+    color: var(--color-cornflowerblue);
+  }
+  .home.register::after,
+  .home.login::after {
+    content: ''; /* Add the pseudo-element */
+    position: absolute; /* Position it relative to the button */
+    bottom: -5px; /* Adjust the distance from the button */
+    left: 0;
+    width: 0; /* Initial width of the line */
+    height: 1.5px; /* Static height of the line */
+    background-color: white; /* Color of the line */
+    transition: width 0.5s ease; /* Add transition effect for width */
+  }
+  .home.register:hover::after,
+  .home.login:hover::after {
+    width: 100%; /* Adjust the width of the line */
+  }
+  .home::after {
+    content: ''; /* Add the pseudo-element */
+    position: absolute; /* Position it relative to the button */
+    bottom: -5px; /* Adjust the distance from the button */
+    left: 0;
+    width: 0; /* Initial width of the line */
+    height: 1.5px; /* Static height of the line */
+    background-color: white; /* Color of the line */
+    transition: width 0.5s ease; /* Add transition effect for width */
+  }
+  .home:hover::after {
+    width: 100%; /* Adjust the width of the line */
+  }
+  .home-parent,
+  .user-select-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-21xl);
+  }
+  .user-select-panel {
+    position: absolute;
+    top: calc(50% - 562.5px);
+    left: calc(50% - 243.5px);
+  }
+  .main-item {
+    position: absolute;
+    top: 148.3px;
+    left: calc(50% - 885px);
+    border-top: 1px solid var(--color-white);
+    box-sizing: border-box;
+    width: 3376px;
+    height: 1px;
+  }
+  .user-action-panel {
+    position: absolute;
+    top: 70px;
+    left: 1411px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-21xl);
+  }
+  .eminence, .eminence2 {
+    position: absolute;
+    top: 55px;
+    left: 66px;
+    font-size: var(--font-size-21xl);
+    color: var(--color-cornflowerblue);
+  }
+  .eminence:hover, .eminence2:hover {
+    cursor: pointer;
+  }
+  .enjoy-counter-strike-2 {
+    position: absolute;
+    top: 599px;
+    left: calc(50% - 620.5px);
+    font-weight: 500;
+  }
+  .try-it-for {
+    font-size: var(--font-size-9xl);
+    position: relative;
+    letter-spacing: 0.16em;
+    line-height: 110%;
+    cursor: pointer; /* Make it non-clickable */
+    color:#fff;
+    white-space: nowrap;
+    text-transform: none;
+    pointer-events: none;
+  }
+  .try-it-for::after {
+    content: ''; /* Add the pseudo-element */
+    position: absolute; /* Position it relative to the text */
+    bottom: -5px; /* Adjust the distance from the text */
+    left: 0;
+    width: 0; /* Initial width of the line */
+    height: 1.5px; /* Static height of the line */
+    background-color: white; /* Color of the line */
+    transition: width 0.5s ease; /* Add transition effect for width */
+  }
+  .try-it-for:hover {
+    color: var(--color-cornflowerblue); /* Change text color to cornflower blue on hover */
+  }
+  .try-it-for:hover::after {
+    width: 100%;
+  }
+  .button,
+  .sharp-buttonfalse {
+    position: absolute;
+    top: 66px; /* Adjust the top value to move the button lower */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center the button */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+    background-color: transparent; /* Make the background transparent */
+    box-shadow: none; /* Remove any box shadow */
+    font-size: var(--font-size-21xl);
+    color: #1959a9;
+  }
+  .button:hover {
+    cursor: default; /* Prevent cursor change on hover */
+    color: #1959a9; /* Keep the original color */
+  }
+  .button {
+    width: 583px;
+    background-color: transparent; /* Make the background transparent */
+    height: 144px;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 20px 32px;
+    box-sizing: border-box;
+  }
+  .capture1-1-icon,
+  .icon,
+  .icon1 {
+    width: 557px;
+    position: relative;
+    height: 413px;
+    object-fit: cover;
+  }
+  .icon,
+  .icon1 {
+    width: 532px;
+    height: 401px;
+  }
+  .icon1 {
+    width: 542px;
+    height: 403px;
+  }
+  .capture1-1-parent {
+    position: absolute;
+    top: 735px;
+    left: 53px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .main {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-black);
+    height: 1253px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-9xl);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+  }
+  /* Modal styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    opacity: 0;
+  }
+  .modal-content {
+    background-color: #0b0b0b; /* Darker background color */
+    margin: auto; /* Center the modal */
+    top: calc(50% - 100px); /* Move the form down by 20 pixels */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal absolutely */
+    position: absolute;
+    padding: 20px;
+    border: 2px solid #111111;
+    width: 300px; /* Specific width 694->490->300*/
+    height: 280px; /* Specific height 490->250->270->280*/
+    color: white; /* White text color */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-align: center;
+  }
+  .modal.show {
+    display: block;
+    animation: fadeIn 1.9s ease forwards; /* Adjust the animation duration here */
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Login form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+  }
+  .modal-eminence {
+    font-size: calc(var(--font-size-21xl) * 0.8); /* Slightly smaller font size */
+    color: var(--color-cornflowerblue);
+    margin-bottom: 20px;
+    font-family: var(--font-montserrat);
+    text-align: center;
+  }
+  .login-form label {
+    margin: 10px 0 5px;
+    width: 100%;
+    text-align: left;
+  }
+  .login-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 0px solid #555;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+  }
+  .login-form button {
+    padding: 20px 60px;
+    background-color: #1959a9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow to transition */
+    font-family: var(--font-montserrat); /* Apply Montserrat font */
+    margin-left: 15px;
+  }
+  .login-form button:hover {
+    background-color: #0f3c73;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
+  }
+  .register-text {
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: var(--font-montserrat); /* Apply Montserrat font */
+  }
+  .register-text:hover {
+    color: var(--color-cornflowerblue);
+  }
+  .main-inner,
+  .rectangle-icon {
+    position: absolute;
+    top: 380px; /*557*/
+    left: 147px;
+    width: 402px;
+    height: 196px;
+    object-fit: cover;
+  }
+  .main-middle {
+    position: absolute;
+    top: 680px; /* 50px lower than the original */
+    left: 147px;
+    width: 402px;
+    height: 196px;
+    object-fit: cover;
+  }
+  .main-lower {
+    position: absolute;
+    top: 980px; /* 50px lower than the original */
+    left: 147px;
+    width: 402px;
+    height: 196px;
+    object-fit: cover;
+  }
+  .b,
+  .in-maintenance { /*GTA V -> Middle Row -> 39.99 -> Status -> In Maintanance*/
+    position: absolute;
+    top: 760px;
+  }
+  .in-maintenance {
+    left: 1225px;
+    color: #decd37;
+  }
+  .b {
+    left: 634px;
+    font-size: var(--font-size-13xl);
+  }
+  .for-365-days { /* CS2 365 DAYS*/
+    position: absolute;
+    top: 527px; /*458*/
+    left: 794px;
+  }
+  .b1,
+  .for-30-days { /*CS2 -> 24.99 + For 30 Days*/
+    position: absolute;
+    top: 200px; 
+  }
+  .b1 {
+    left: 110px;
+    top : 300px;
+    font-size: var(--font-size-13xl);
+  }
+  .for-30-days {
+    left: 650px;
+    top : 30px;
+    font-size: var(--font-size-5xl);
+    color: var(--color-cornflowerblue);
+  }
+  .b2,
+  .b3,
+  .b4,
+  .for-90-days { /*CS2 -> 69.99 + For 90 Days*/
+    position: absolute;
+    top: 458.5px;
+  }
+  .b2 { /*DONE*/
+    left: 638px;
+    font-size: var(--font-size-13xl);
+  }
+  .b3,
+  .b4,
+  .for-90-days { /*CS2 FOR 90 DAYS*/
+    left : 480px;
+    top: 306px;
+    font-size: var(--font-size-5xl);
+  }
+  .b3,
+  .b4 { /*CS2 -> 199.99*/
+    top: 526px; /*459*/
+    left: 625px;
+    font-size: var(--font-size-5xl);
+  }
+  .b3{
+    left: 67px;
+    font-size: var(--font-size-13xl);
+    top: 400px;
+    color:white;
+  }
+  .b4{
+    left: 67px;
+    font-size: var(--font-size-5xl);
+    top: 500px;
+    color:#FFA500;
+  }
+  .for-30-days1,
+  .for-90-days1 { /* GTA V -> For 30 Days*/
+    position: absolute;
+    top: 694px;
+    left: 794px;
+  }
+  .for-90-days1 { /*GTA V-> For 90 Days*/
+    left: 67px;
+    left: 794px;
+    font-size: var(--font-size-5xl);
+    color:#87CEEB;
+  }
+  .for-30-days1{
+    top: 500px;
+    left: 340px;
+    color: var(--color-cornflowerblue);
+    font-size: var(--font-size-5xl);
+  }
+  .for-90-days1{
+    left: 67px;
+    top: 600px;
+    font-size: var(--font-size-5xl);
+  }
+  .b5,
+  .for-365-days1 { /*GTA V -> Lifetime*/
+    position: absolute;
+    top: 750px;
+    left:100px;
+    color: var(--color-cornflowerblue);
+  }
+  .b5 {
+    left: 210.5px;
+    font-size: var(--font-size-5xl);
+    top : 600px;
+  }
+  .for-365-days1 {
+    left: 794px;
+  }
+  .b6, /*CS2 -> Rust -> 27.99 + 30 Days*/
+  .for-30-days2 {
+    position: absolute;
+    top: 1017px;
+  }
+  .b6 {
+    left: 67px;
+    font-size: var(--font-size-5xl);
+    top:700px;
+    color : #00FF00;
+  }
+  .for-30-days2 {
+    left: 194px;
+    top: 700px;
+    font-size: var(--font-size-5xl);
+    color: var(--color-cornflowerblue);
+  }
+  .b7,
+  .for-90-days2 { /*CS2 -> Rust -> 79.99 + 90 Days*/
+    position: absolute;
+    top: 1100px;
+  }
+  .b7 {
+    left: 635px; /*635*/
+    font-size: var(--font-size-13xl);
+  }
+  .for-90-days2 {
+    left: 794px;
+  }
+  .status,
+  .undetected { /*DONE*/
+    position: absolute;
+    top: 465px;
+    left: 1088px;
+  }
+  .undetected {
+    left: 1225px;
+    color: #00fc19;
+  }
+  .coming-soon,
+  .status1,
+  .status2 {
+    position: absolute;
+    top: 760px;
+    left: 1088px;
+  }
+  .coming-soon,
+  .status2 { /*Rust -> Status -> Coming Soon*/
+    top: 1060px;
+  }
+  .coming-soon {
+    left: 1225px;
+    color: #3e11f1;
+  }
+  /* Modal styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    opacity: 0;
+  }
+  .modal-content {
+    background-color: #0b0b0b; /* Darker background color */
+    margin: auto; /* Center the modal */
+    top: calc(50% - 100px); /* Move the form down by 20 pixels */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal absolutely */
+    position: absolute;
+    padding: 20px;
+    border: 2px solid #111111;
+    width: 300px; /* Specific width 694->490->300*/
+    height: 280px; /* Specific height 490->250->270->280*/
+    color: white; /* White text color */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-align: center;
+  }
+  .modal.show {
+    display: block;
+    animation: fadeIn 1.9s ease forwards; /* Adjust the animation duration here */
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Login form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+  }
+  .modal-eminence {
+    font-size: calc(var(--font-size-21xl) * 0.8); /* Slightly smaller font size */
+    color: var(--color-cornflowerblue);
+    margin-bottom: 20px;
+    font-family: var(--font-montserrat);
+    text-align: center;
+  }
+  .login-form label {
+    margin: 10px 0 5px;
+    width: 100%;
+    text-align: left;
+  }
+  .login-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 0px solid #555;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+  }
+  .login-form button {
+    padding: 20px 60px;
+    background-color: #1959a9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow to transition */
+    font-family: var(--font-montserrat); /* Apply Montserrat font */
+    margin-left: 15px;
+  }
+  .login-form button:hover {
+    background-color: #0f3c73;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
+  }
+  .register-text {
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: var(--font-montserrat); /* Apply Montserrat font */
+  }
+  .register-text:hover {
+    color: var(--color-cornflowerblue);
+  }
+  
+  .hidden{
+    display:none;
+  }
+
+  
+  /* Register form styling */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .modal-eminence {
+    font-size: calc(var(--font-size-21xl) * 0.8); /* Slightly smaller font size */
+    color: var(--color-cornflowerblue);
+    margin-bottom: 20px;
+    font-family: var(--font-montserrat);
+    text-align: center;
+  }
+  
+  .register-form label {
+    margin: 10px 0 5px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .register-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 0px solid #555;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .register-form button {
+    padding: 20px 60px;
+    background-color: #1959a9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow to transition */
+    font-family: var(--font-montserrat); /* Apply Montserrat font */
+    margin-left: 15px;
+  }
+  
+  .register-form button:hover {
+    background-color: #0f3c73;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
+  }
+  
+  
+  .register-text {
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 20px;
+    font-family: var(--font-montserrat); /* Apply Montserrat font */
+  }
+  
+  .register-text:hover {
+    color: var(--color-cornflowerblue);
+  }
+  .logout-image {
+    height: 60px; /* Set the height of the image to match the button */
+    position: relative;
+    top : -22px;
+    left: 5px;
+    cursor:pointer;
+    transition : filter 0.3 ease;
+  }
+  @keyframes brightnessAnimation {
+    0% { filter: brightness(1); } /* Start with normal brightness */
+    50% { filter: brightness(5); } /* Reduce brightness halfway through */
+    100% { filter: brightness(1); } /* Return to normal brightness */
+  }
+  .logout-image:hover {
+    animation: brightnessAnimation 1s infinite; /* Apply the animation */
+  }
+  
+  .b1 {
+    position: absolute;
+    top: 184.5px; /* Adjusted top position */
+    left : 674px;
+    font-size: var(--font-size-13xl);
+  }
+  .for-30-days,
+.for-90-days {
+  position: absolute;
+  top: 400px; /* 100px lower than "Last client update" */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: var(--font-size-5xl);
+}
+.for-30-days{
+    left: 740px;
+}
+.for-90-days{
+    left : 1000px;
+}
+
+.eminence2 {
+  top: 188px;
+  left: 1413px;
+  font-size: var(--font-size-9xl);
+  text-align: center;
+  position: absolute;
+  transition: color 0.5s ease, opacity 0.5s ease; /* Add opacity transition */
+  color : #ff8c8c;
+  opacity : 1;
+}
+
+.eminence2:hover {
+  color: #ff0000;
+  opacity: 1; /* Fade the element */
+  animation: brightnessAnimation 1.5s infinite; /* Apply the brightness animation */
+}
+@keyframes brightnessAnimation {
+  0% { filter: brightness(0.00); } /* Start with normal brightness */
+  50% { filter: brightness(0.5); } /* Reduce brightness halfway through */
+  100% { filter: brightness(1); } /* Return to normal brightness */
+}
+.eminence3{
+  top: 188px;
+  left: 67px;
+  position: absolute;
+  color: greenyellow;;
+  font-family: var(--font-montserrat);
+  font-size: var(--font-size-9xl);
+  cursor: auto;
+}
+.try-it-for {
+  position: absolute;
+  top: 57.5px;
+  left: 25px;
+  width: 100px;
+  color: greenyellow;
+}
+.hidden{
+  display: none;
+}
+@keyframes constantAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(1); /* Initial scale */
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2); /* Scale up halfway through */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1); /* Return to normal scale */
+  }
+}
+.for-30-days{
+  top : 300px;
+}
+.for-90-days{
+  top: 300px;
+}
